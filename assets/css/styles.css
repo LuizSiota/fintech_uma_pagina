@@ -1,0 +1,80 @@
+/* Cor do container do título */
+.header-container {
+    background-color: #6d87d1; /* Lilás */
+    padding: 20px 0;
+    position: relative;
+}
+
+/* Botão/menu lateral */
+.menu-btn {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* Estilo dos botões principais */
+.action-btn {
+    width: 100%;
+    max-width: 500px;
+    padding: 18px 20px;
+    background-color: #e6e6e6;
+    color: #000;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.action-btn:hover {
+    background-color: #d9d9d9;
+}
+
+.icon-circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* Sidebar oculta */
+#sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #475fa3;
+    position: fixed;
+    top: 0;
+    left: -260px;
+    padding: 20px;
+    transition: 0.3s ease;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+}
+#sidebar.active {
+    left: 0;
+}
+#sidebar li {
+    padding: 3% 0;
+    margin-top: 100px
+}
+
+#sidebar .icon-circle {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
